@@ -9,6 +9,7 @@ const tabContent = document.querySelectorAll(".tab-content");
 // クリックした時にtabToggle関数を発火
 for (let i = 0; i < tabItem.length; i++) {
   tabItem[i].addEventListener("click", tabToggle);
+  
 }
 
 function tabToggle() {
@@ -26,6 +27,7 @@ function tabToggle() {
   // tabItemを配列にする
   // [<li class="tab-item active">About</li>, <li class="tab-item">Works</li>, <li class="tab-item">Contact</li>]
   const aryTabs = Array.prototype.slice.call(tabItem);
+
 
   // 配列に格納したキーワードと最初一致したインデックスを格納
   // <li class="tab-item active">About</li>の場合は「0」が返ってくる
