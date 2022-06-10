@@ -1,0 +1,117 @@
+/* ここからreset.css */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input, select {
+  vertical-align: middle;
+}
+p, .nav {
+  margin: 0;
+}
+/* reset.cssはここまで */
+
+
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+}
+.tab-list {
+  display: flex;
+}
+.tab-list li {
+    width: 100px;
+    border: 1px solid #333;
+    border-left: none;
+    border-bottom: none;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    color: #333;
+    transition: 0.2s ease;
+    cursor: pointer;
+    list-style:none;
+}
+.tab-list li:first-child {
+  border-left: 1px solid #333;
+}
+.tab-list li:hover {
+  background: #333;
+  color: #fff;
+}
+.tab-list li.active {
+  background: #333;
+  color: #fff;
+}
+.tab-container {
+  border: 1px solid #333;
+  padding: 20px;
+  line-height: 2;
+  height: 300px;
+}
+.tab-content {
+  display: none;
+}
+.tab-content.active{
+  display: block;
+}
